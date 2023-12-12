@@ -1,12 +1,10 @@
-﻿namespace AdventOfCode;
+﻿using AdventOfCode.Common;
 
-public class Day2
+namespace AdventOfCode.Days;
+
+public class Day2 : DayTask
 {
-    string filePath;
-    public Day2(string path)
-    {
-        filePath = path;
-    }
+    public Day2(string path) : base(path) { }
 
     public class RGB
     {
@@ -24,13 +22,13 @@ public class Day2
             foreach (var token in tokens)
             {
                 var values = token.Split(' ');
-                switch(values[2]) 
+                switch (values[2])
                 {
                     case "red":
                         Red = int.Parse(values[1]);
                         break;
                     case "green":
-                        Green = int.Parse(values[1]); 
+                        Green = int.Parse(values[1]);
                         break;
                     case "blue":
                         Blue = int.Parse(values[1]);

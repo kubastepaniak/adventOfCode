@@ -1,11 +1,11 @@
-﻿namespace AdventOfCode;
+﻿using AdventOfCode.Common;
 
-public class Day3
+namespace AdventOfCode.Days;
+
+public class Day3 : DayTask
 {
-    string filePath;
-    public Day3(string path)
+    public Day3(string path) : base(path) 
     {
-        filePath = path;
         Initialize();
     }
 
@@ -93,7 +93,7 @@ public class Day3
         }
     }
 
-    void Initialize()
+    protected override void Initialize()
     {
         // read for points map
         using (var input = File.OpenRead(filePath))

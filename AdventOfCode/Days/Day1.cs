@@ -1,13 +1,10 @@
-﻿namespace AdventOfCode;
+﻿using AdventOfCode.Common;
 
-public class Day1
+namespace AdventOfCode.Days;
+
+public class Day1 : DayTask
 {
-    string filePath;
-
-    public Day1(string path) 
-    {
-        filePath = path;
-    }
+    public Day1(string path) : base(path) { }
 
     Dictionary<int, string> numbersDictionary = new Dictionary<int, string>()
     {
@@ -71,14 +68,14 @@ public class Day1
 
     string ExtractNumbersStringWithLiterals(string line)
     {
-        List<(int, int)> numbersWithPositions = new List<(int, int)> ();
+        List<(int, int)> numbersWithPositions = new List<(int, int)>();
         for (int i = 1; i < 10; i++)
         {
             int position = 0;
-            while(true)
+            while (true)
             {
                 position = line.IndexOf(i.ToString(), position);
-                
+
                 if (position == -1) break;
 
                 numbersWithPositions.Add((i, position));
@@ -98,7 +95,7 @@ public class Day1
         }
         numbersWithPositions.Sort((x, y) => x.Item2.CompareTo(y.Item2));
         string numbers = "";
-        foreach((int, int) number  in numbersWithPositions)
+        foreach ((int, int) number in numbersWithPositions)
         {
             numbers += number.Item1.ToString();
         }

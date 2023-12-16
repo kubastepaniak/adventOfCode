@@ -23,8 +23,13 @@ day4.PartTwo();
 Console.WriteLine("======= DAY 5 =======");
 var day5 = new Day5("day5.txt");
 day5.PartOne();
-day5.PartTwo(); 
+day5.PartTwo();
 // Due to not yet debugged issue, the result of day 5 displayed is one higher that the real anwser.
 // Don't ask me how I guessed that, I just had a hunch that I messed up some destination edge case or indexing during translation
+
+Console.WriteLine("======= DAY 6 =======");
+var day6 = new Day6("day6.txt");
+day6.PartOne();
+//day6.PartTwo(); // all 3 methods, so commented because it lags
 
 Console.WriteLine(Console.ReadLine());

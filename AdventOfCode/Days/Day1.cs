@@ -19,7 +19,7 @@ public class Day1 : DayTask
         { 9, "nine" }
     };
 
-    public void PartOne()
+    public override void PartOne()
     {
         using (var input = File.OpenRead(filePath))
         {
@@ -38,7 +38,7 @@ public class Day1 : DayTask
         }
     }
 
-    public void PartTwo()
+    public override void PartTwo()
     {
         using (var input = File.OpenRead(filePath))
         {

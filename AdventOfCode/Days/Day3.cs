@@ -168,7 +168,7 @@ public class Day3 : DayTask
         }
     }
 
-    public void PartOne()
+    public override void PartOne()
     {
         int sum = 0;
         foreach (var number in numbersMap)
@@ -182,7 +182,7 @@ public class Day3 : DayTask
         Console.WriteLine(sum);
     }
 
-    public void PartTwo()
+    public override void PartTwo()
     {
         int sum = 0;
         foreach(var point in pointsMap.Values)

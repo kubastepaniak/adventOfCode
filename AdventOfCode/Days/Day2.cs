@@ -81,7 +81,7 @@ public class Day2 : DayTask
 
     }
 
-    public void PartOne()
+    public override void PartOne()
     {
         List<GameData> data = new List<GameData>();
 
@@ -125,7 +125,7 @@ public class Day2 : DayTask
         return true;
     }
 
-    public void PartTwo()
+    public override void PartTwo()
     {
         List<GameData> data = new List<GameData>();
 

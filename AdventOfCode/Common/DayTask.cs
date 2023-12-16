@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode.Common;
 
-public class DayTask
+public abstract class DayTask
 {
     protected string filePath;
 
@@ -10,4 +10,7 @@ public class DayTask
     }
 
     protected virtual void Initialize() { }
+
+    public abstract void PartOne();
+    public abstract void PartTwo();
 }

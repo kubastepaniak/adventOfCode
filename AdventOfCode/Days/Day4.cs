@@ -56,7 +56,7 @@ public class Day4 : DayTask
         }
     }
 
-    public void PartOne()
+    public override void PartOne()
     {
         int sum = 0;
         foreach(var scratchcard in scratchcards)
@@ -66,7 +66,7 @@ public class Day4 : DayTask
         Console.WriteLine(sum);
     }
 
-    public void PartTwo()
+    public override void PartTwo()
     {
         double sum = 0;
         for(int i = 0; i < scratchcards.Count; i++)

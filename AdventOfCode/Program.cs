@@ -32,4 +32,10 @@ var day6 = new Day6("day6.txt");
 day6.PartOne();
 //day6.PartTwo(); // all 3 methods, so commented because it lags
 
+Console.WriteLine("======= DAY 7 =======");
+var day7 = new Day7("day7.txt");
+day7.PartOne();
+day7.PartTwo();
+
+
 Console.WriteLine(Console.ReadLine());

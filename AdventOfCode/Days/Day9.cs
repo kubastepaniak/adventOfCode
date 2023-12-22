@@ -44,6 +44,16 @@ public class Day9 : DayTask
             sum += row[0] - ExtrapolateBackwards(row);
         }
         Console.WriteLine(sum);
+        
+        /* credit where credit is due - reddit told me this, but its smart so I put it in a comment
+        double sum = 0;
+        foreach (var row in data)
+        {
+            row.Reverse();
+            sum += row[^1] + Extrapolate(row);
+        }
+        Console.WriteLine(sum);
+        */
     }
 
     int Extrapolate(List<int> data)

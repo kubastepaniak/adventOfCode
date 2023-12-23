@@ -47,4 +47,9 @@ var day9 = new Day9("day9.txt");
 day9.PartOne();
 day9.PartTwo();
 
+Console.WriteLine("======= DAY 10 =======");
+var day10 = new Day10("day10.txt");
+day10.PartOne();
+day10.PartTwo();
+
 Console.WriteLine(Console.ReadLine());
